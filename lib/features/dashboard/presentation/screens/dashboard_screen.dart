@@ -9,9 +9,9 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: AdaptiveLayout(
-        mobileLayout: (context) => Center(child: Text('Mobile Layout')),
-        tabletLayout: (context) => Center(child: Text('Tablet Layout')),
-        desktopLayout: (context) => DashboardDesktopLayout(),
+        mobileLayoutBuilder: (context) => Center(child: Text('Mobile Layout')),
+        tabletLayoutBuilder: (context) => Center(child: Text('Tablet Layout')),
+        desktopLayoutBuilder: (context) => DashboardDesktopLayout(),
       ),
     );
   }
