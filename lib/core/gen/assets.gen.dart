@@ -21,8 +21,11 @@ class $AssetsImagesGen {
   AssetGenImage get maskGroup =>
       const AssetGenImage('assets/images/Mask group.png');
 
+  /// File path: assets/images/avatar.png
+  AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [maskGroup];
+  List<AssetGenImage> get values => [maskGroup, avatar];
 }
 
 class $AssetsSvgsGen {
